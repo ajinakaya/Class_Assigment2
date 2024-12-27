@@ -6,5 +6,4 @@ class SimpleInterestCubit extends Cubit<double> {
   void calculateInterest(double principal, double rate, double time) {
     emit((principal * rate * time) / 100);
   }
-
 }

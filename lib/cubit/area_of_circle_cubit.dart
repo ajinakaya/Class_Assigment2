@@ -4,7 +4,6 @@ class AreaOfCircleCubit extends Cubit<double> {
   AreaOfCircleCubit() : super(0);
 
   void calculateArea(double radius) {
-    emit(3.14159 * radius * radius); // πr²
+    emit(3.14159 * radius * radius);
   }
-
 }

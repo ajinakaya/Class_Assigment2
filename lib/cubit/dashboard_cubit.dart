@@ -2,7 +2,6 @@ import 'package:class_assigment2/cubit/area_of_circle_cubit.dart';
 import 'package:class_assigment2/cubit/simple_interest_cubit.dart';
 import 'package:class_assigment2/view/area_of_circle_cubit_view.dart';
 import 'package:class_assigment2/view/simple_interest_cubit_view.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -42,5 +41,4 @@ class DashboardCubit extends Cubit<void> {
       ),
     );
   }
-
 }
