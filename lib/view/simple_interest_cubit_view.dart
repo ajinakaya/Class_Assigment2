@@ -10,10 +10,10 @@ class SimpleInterestCubitView extends StatelessWidget {
     final principalController = TextEditingController();
     final rateController = TextEditingController();
     final timeController = TextEditingController();
-cd
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text(' Ajina Simple Interest'),
+        title: const Text('Ajina Simple Interest'),
         centerTitle: true,
       ),
       body: Padding(
@@ -68,7 +68,6 @@ cd
                   child: const Text('Calculate Interest'),
                 ),
               ),
-
             ],
           ),
         ),
