@@ -28,7 +28,8 @@ class DashboardView extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const <Widget>[
-                  Icon(Icons.attach_money, size: 48, color: Colors.green),
+                  Icon(Icons.attach_money, size: 50, color: Colors.green),
+                  const SizedBox(height: 8),
                   Text(
                     'Simple Interest',
                     style: TextStyle(fontWeight: FontWeight.bold),
@@ -45,7 +46,8 @@ class DashboardView extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const <Widget>[
-                  Icon(Icons.circle, size: 48, color: Colors.blue),
+                  Icon(Icons.circle, size: 50, color: Colors.blue),
+                  const SizedBox(height: 8),
                   Text(
                     'Area of Circle',
                     style: TextStyle(fontWeight: FontWeight.bold),
