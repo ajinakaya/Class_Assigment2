@@ -12,7 +12,7 @@ class AreaOfCircleCubitView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text(' Ajina Area of Circle'),
+        title: const Text('Ajina Area of Circle'),
         centerTitle: true,
       ),
       body: Padding(
@@ -23,7 +23,8 @@ class AreaOfCircleCubitView extends StatelessWidget {
               TextFormField(
                 controller: radiusController,
                 decoration: const InputDecoration(
-                    labelText: 'Radius', border: OutlineInputBorder()),
+                    labelText: 'Radius', border: OutlineInputBorder()
+                ),
                 keyboardType: TextInputType.number,
               ),
               const SizedBox(height: 10),
