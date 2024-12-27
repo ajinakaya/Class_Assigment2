@@ -1,4 +1,5 @@
 import 'package:class_assigment2/cubit/area_of_circle_cubit.dart';
+import 'package:class_assigment2/cubit/arithmetic_cubit.dart';
 import 'package:class_assigment2/cubit/dashboard_cubit.dart';
 import 'package:class_assigment2/cubit/simple_interest_cubit.dart';
 import 'package:class_assigment2/view/dashboard_cubit_view.dart';
@@ -16,11 +17,13 @@ class App extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => AreaOfCircleCubit()),
         BlocProvider(create: (context) => SimpleInterestCubit()),
+        BlocProvider(create: (context) => ArithmeticCubit()),
 
         BlocProvider(
           create: (context) => DashboardCubit(
             context.read<AreaOfCircleCubit>(),
             context.read<SimpleInterestCubit>(),
+            context.read<ArithmeticCubit>(),
           ),
         ),
       ],

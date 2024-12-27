@@ -11,6 +11,7 @@ class DashboardView extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Ajina Dashboard'),
         centerTitle: true,
+        backgroundColor: Colors.blueGrey,
       ),
       body: GridView(
         padding: const EdgeInsets.all(8),
@@ -50,6 +51,25 @@ class DashboardView extends StatelessWidget {
                   const SizedBox(height: 8),
                   Text(
                     'Area of Circle',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
+            ),
+          ),
+
+          Card(
+            child: InkWell(
+              onTap: () {
+                context.read<DashboardCubit>().openArithmeticView(context);
+              },
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const <Widget>[
+                  Icon(Icons.calculate, size: 50, color: Colors.orange),
+                  SizedBox(height: 8),
+                  Text(
+                    'Arithmetic',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ],

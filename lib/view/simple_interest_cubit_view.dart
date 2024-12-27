@@ -15,6 +15,7 @@ class SimpleInterestCubitView extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Ajina Simple Interest'),
         centerTitle: true,
+        backgroundColor: Colors.blueGrey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(10),
